@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+}
+
+
+main {
+    margin-top: 50px;
+    text-align: center;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 -70%;
+}
+
+main .card {
+
+    background-color: #FFF;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+    margin: auto;
+    padding: 0;
+}
+
+
+
+/* title */
+
+main .card .title-img {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin-bottom: 40px;
+}
+
+main .card #title h1{
+    font-weight: 900;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+main .card #title p {
+    font-size: 14px;
+    color: #9192A3;
+}
+
+
+
+/* music button */
+
+main .card #MusicButton {
+    background-color: #F8F9FE;
+    margin: 7px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.father {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.father div p{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.father div p:first-child {
+    font-weight: 900;
+}
+
+.father div p:last-child { 
+    color: #9192A3;
+}
+
+#MusicButton a {
+    color: rgb(94, 72, 242);
+    text-decoration: underline;
+}
+
+#MusicButton a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+
+/* footer */ 
+
+footer button{
+    background-color: hsl(245, 75%, 52%);
+    color: #FFF;
+    width: 89%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    border: none;
+    box-shadow: 1px 10px 10px 0 #D9D7F8;
+}
+
+
+footer button:hover {
+    background-color: hsla(245, 75%, 52%, .8);
+    
+}
+
+footer a {
+    display: inline-block;
+    color: #9192A3;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/* @media for different devices */
+
+
+/* small laptop screens */
+
+@media (min-width:991.9px) and (max-width: 1520px) {
+
+    main .card {
+        
+        min-width: 30%;
+        max-width: 60%;
+    }
+}
+
+
+/* tablets */
+
+@media (min-width:767.9px) and (max-width:991.9px) {
+
+    main .card {
+        
+        min-width: 40%;
+        max-width: 60%;
+    }
+}
+
+
+/* phones */
+
+@media (min-width: 341px) and (max-width: 575.9px) {
+    
+    main {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    main .card {
+        min-width: 60%;
+        max-width: 70%;
+    }
+    #MusicButton p,a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:340.9px) {
+
+
+    main {
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    main .card {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    #MusicButton p,a {
+        font-size: 13px;
+    }
+}
