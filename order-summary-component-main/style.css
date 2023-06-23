@@ -17,7 +17,7 @@ main {
     background-image: url('images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 -70%;
+    background-position: 0 -20px;
 }
 
 main .card {
